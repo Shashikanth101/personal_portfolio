@@ -1,0 +1,182 @@
+body {
+  margin: 0;
+  text-align: center;
+  background-color: #E4F9F5;
+  font-family: sans-serif;
+}
+h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: 'Sacramento', cursive;
+  font-size: 50px;
+  color: #66BFBF;
+}
+p {
+  line-height: 1;
+  font-size: 2rem;
+  font-family: 'Overlock', cursive;
+  color: #66BFBF;
+}
+hr {
+  border: dotted #EAF6F6 6px;
+  border-bottom: none;
+  margin: 100px auto;
+}
+
+/********* Top container *********/
+.head-part {
+  height: 100vh;
+}
+.heading-2 {
+  font-size: 25px;
+  font-family: 'Overlock', cursive;
+  font-weight: normal;    /* this removes the bold property of h2 */
+  color: #66BFBF;
+}
+.top-container {
+  background-color: #E4F9F5;
+  position: relative;
+  width: 80%;
+  margin: 100px auto 0 auto;
+}
+.bottom-cloud {
+  position: absolute;
+  left: 100px;
+  top: 200px;
+  display: inline;
+}
+.top-cloud {
+  position: absolute;
+  right: 100px;
+  top: -20px;
+  display: inline;
+}
+.mountain {
+  width: 80%;
+}
+
+/************* Middle container (About me section) **************/
+.about-me {
+  background-color: white;
+  padding: 100px 0;
+}
+.profile-pic {
+  border-radius: 50%;
+}
+.my-skills-heading {
+  color: #66BFBF;
+  font-family: 'Overlock', cursive;
+  font-size: 2rem;
+  margin: 50px 0;
+}
+.skills {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.skill-images {
+  width: 50px;
+  display: inline-block;
+}
+.skill-description {
+  font-size: 1.1rem;
+  color: #66BFBF;
+  font-family: 'Overlock', cursive;
+  line-height: 2;
+  display: inline-block;
+}
+.skill-1-description {
+  text-align: left;
+  display: inline;
+}
+.skill-2-description {
+  text-align: right;
+  display: inline;
+}
+
+/********* Contacts section *********/
+.social-media-links {
+  margin: 50px auto 50px auto;
+}
+.social-media-icons {
+  width: 50px;
+  margin: 10px;
+}
+.contact-me-heading {
+  margin: 50px 0 0 0;
+  font-family: 'Overlock', cursive;
+}
+h2 {
+  color: #66BFBF;
+}
+
+/****** Smartphones *******/
+@media (min-width: 320px) {
+  .top-container {
+    width: 100%;
+  }
+  .mountain {
+    width: 100%;
+  }
+  .top-cloud, .bottom-cloud {
+    display: none;
+  }
+  .profile-pic {
+    width: 60%;
+  }
+  hr {
+    width: 30%;
+    margin: 60px auto;
+  }
+  .my-skills {
+    width: 90%;
+    margin: auto;
+  }
+  .skill-images {
+    margin: 20px;
+  }
+  .for-desktops {
+    display: none;
+  }
+  .for-phones {
+    display: inline-block;
+  }
+}
+
+/********* Desktop *******/
+@media (min-width:801px) {
+  .top-container {
+    width: 80%;
+  }
+  .mountain {
+    width: 40%;
+  }
+  .top-cloud, .bottom-cloud {
+    display: inline-block;
+  }
+  .profile-pic {
+    width: 20%;
+  }
+  hr {
+    width: 10%;
+  }
+  .set-1, .set-2 {
+    display: inline-block;
+  }
+  .my-skills {
+    width: 40%;
+    margin: auto;
+  }
+  .skill-description {
+    font-size: 1.55rem;
+  }
+  .skill-images {
+    margin: 40px;
+  }
+  .for-phones {
+    display: none;
+  }
+  .for-desktops {
+    display: inline-block;
+  }
+}
